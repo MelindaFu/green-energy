@@ -1,0 +1,230 @@
+/*@author: Xuechen Fu
+.My-Color-Theme-1-hex { color: #20732A; }
+.My-Color-Theme-2-hex { color: #41E074; }
+.My-Color-Theme-3-hex { color: #54F7A8; }
+.My-Color-Theme-4-hex { color: #4AE0B6; }
+.My-Color-Theme-5-hex { color: #DEFFFC; }
+
+Title:
+font-family: 'Bree Serif', serif;
+
+body:
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+body {
+	font-size: 0.75rem;
+	line-height: 1.4;
+    background-color: #DEFFFC;
+}
+
+.main {
+	max-width: 27rem;
+	padding: 1.2rem;
+}
+
+/*********************** header *******************************************/
+
+header {
+	background-image: url("../img/background.jpg");
+	border-radius: 5px;
+    
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+	color: white;
+	padding-bottom: 2rem;
+}
+
+header img {
+	max-width: 25rem;
+}
+
+
+/*********************** nav bar *******************************************/
+nav ul {
+	list-style-type: none;
+    padding-inline-start: 0;
+
+}
+
+nav {
+    padding-bottom: 1rem;
+	margin-bottom: 1rem;
+    }
+
+nav li {
+    padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+    
+    font-family: 'Bree Serif', serif;
+    background-color: transparent;
+	outline: none;
+}
+
+nav li:hover {
+	background-color: #20732A;
+	color: white;
+}
+
+nav li:active {
+    box-shadow: 5px 3px 3px #2FE06C; 
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav a:visited{
+    color: black;
+}
+
+
+/*********************** contents *******************************************/
+.buttons {
+	padding: 0.5rem;
+	background-color: transparent;
+    
+	margin-right: 0.8rem;
+	font-family: 'Bree Serif', serif;
+	    
+    border: 0px solid #2FE0C5;
+	outline: none;
+    
+    display:block;
+    margin:0 auto;
+    margin-bottom: 0.6rem;
+    
+}
+
+.loaded-content {padding-bottom: 0.8rem;}
+
+.loaded-content h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.loaded-content img {
+	max-width: 100%;
+    box-shadow: 5px 3px 3px #959897; 
+	border-radius: 2px;
+    
+}
+
+#controls {
+	padding: 1.5rem 0;
+}
+
+.active, .buttons:hover {
+    color: white;
+	background-color: #20732A;
+}
+
+.active, .buttons:active {
+    box-shadow: 5px 3px 3px #2FE06C; 
+}
+
+
+
+/*********************** footer *******************************************/
+
+.media {
+	display: flex;
+	border-top: 1px solid #2FE0C5;
+	padding-top: 1rem;
+}
+
+.media div:nth-child(1) img, .media div:nth-child(2) img,.media div:nth-child(3) img{
+	width: 40px;
+	height: 40px;
+	margin-right: 1.5rem;
+}
+
+#yt{
+    height: 40px;
+    width: auto;
+}
+
+/*********************** desktop size *******************************************/
+@media screen and (min-width: 30rem) {
+    body {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .main {
+        max-width: 60rem;
+        padding: 1.2rem;
+        margin: 0 auto;
+
+    }
+
+    /*********************** header *******************************************/
+    header img {
+        max-width: 25rem;
+    }
+
+
+    /*********************** nav bar *******************************************/
+    nav {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        }
+
+    nav li {   
+        background-color: transparent;
+        outline: none;
+
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+    }
+
+    /*********************** contents *******************************************/
+    .buttons {
+        padding: 0.5rem;
+        background-color: transparent;
+
+        margin-right: 1rem;
+
+        outline: none;
+
+
+        margin-bottom: 0.6rem;
+    }
+
+    .loaded-content img {
+        width: 25%;
+        float: left;
+        margin: 0 1rem 1rem 0;
+        box-shadow: 5px 3px 3px #959897; 
+
+    }
+
+    #controls {
+        padding: 1.5rem 0;
+        display:block;
+        margin:0 auto;
+    }
+
+    .active, .buttons:hover {
+        color: white;
+        background-color: #20732A;
+    }
+
+    .active, .buttons:active {
+        box-shadow: 5px 3px 3px #2FE06C; 
+    }
+
+
+
+    /*********************** footer *******************************************/
+    .media {
+        clear: both;
+    }
+
+}
